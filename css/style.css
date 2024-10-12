@@ -1,0 +1,68 @@
+body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            width: 150px;
+            height: 150px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .online-status {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .online-status::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: hsl(141, 71%, 48%);
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .navbar {
+            border-bottom: 1px solid #333;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .profile {
+            flex: 1;
+            max-width: 300px;
+
+        }
+
+        .profile, .tech-stack .icons div, .certificates .cert-list .cert {
+        border-radius: 10px;
+        }
+
+        .profile img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .profile .tags span{
+            border-radius: 5px;
+        }
+
+        .main-content {
+            flex:2;
+        }
+
+        .tech-stack-items {
+            min-width: 150px;
+            max-height: 150px;
+            max-width: 150px;
+        }
