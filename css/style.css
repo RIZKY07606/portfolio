@@ -1,6 +1,6 @@
-body {
+html, body {
             font-family: Arial, Helvetica, sans-serif;
-            height: 100vh;
+            min-height: 100vh;
         }
         .gradient-text {
             background: linear-gradient(90deg, #00c6ff, #0072ff);
@@ -42,7 +42,6 @@ body {
             max-width: 300px;
 
         }
-
         .profile, .tech-stack .icons div, .certificates .cert-list .cert {
         border-radius: 10px;
         }
@@ -65,4 +64,43 @@ body {
             min-width: 150px;
             max-height: 150px;
             max-width: 150px;
+        }
+
+        .project {
+            width: 30%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 100%;
+            display: block;
+        }
+
+        .project .tags {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 5px;
+        }
+        .contact-form {
+            border-radius: 10px;
+            width: 400px;
+        }
+        .contact-form label {
+            display: block;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            border: 1px solid  hsl(0, 0%, 71%);
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #fff;
+        }
+        .fullheight {
+            height: 100vh;
         }
